@@ -1,0 +1,53 @@
+//  Shreyansh Shukla
+//  21
+
+//  Input : s = "aabcb"
+//  Output: [["a","a","b","c","b"],["a","a","bcb"],["aa","b","c","b"],["aa","bcb"]]
+
+
+
+
+
+class Solution {
+public:
+    vector<vector<string>>ans;
+    
+    bool isPalindrom(int i,int j,string str)
+    {
+        while(i<=j)
+        {
+            if(str[i] != str[j])
+                return false;
+            
+            i++;
+            j--;
+        }
+        return true;
+    }
+    
+    void fun(string &s,vector<string> &v,int index=0)
+    {
+        if(index == s.size())
+        {
+            ans.push_back(v);
+            return;
+        }
+            
+        for(int i=index;i<s.size();i++)
+        {
+            if(isPalindrom(index,i,s))
+            {
+                v.push_back(s.substr(index,i-index+1));
+                fun(s,v,i+1);
+                v.pop_back();
+            }
+        }
+    }
+    
+    vector<vector<string>> partition(string s) 
+    {
+        vector<string>v;
+        fun(s,v);
+        return ans;   
+    }
+};
