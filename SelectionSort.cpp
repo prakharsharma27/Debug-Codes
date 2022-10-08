@@ -10,28 +10,17 @@
 // 11 12 22 25 64
 
 
-// Name : Anmol Saxena  Age : 21
+// Name : Dhruv Goyal  Age : 21
 
 
 void selectionSort(int arr[], int n)
 {
-    int i, j, max_idx;
- 
-    // One by one move boundary of
-    // unsorted subarray
     for (i = 0; i < n-1; i++)
     {
-       
-        // Find the maximum element in
-        // unsorted array
-        max_idx = i;
-        for (j = i+1; j < n; j++)
-        if (arr[j] > arr[max_idx])
-            max_idx = j;
- 
-        // Swap the found maximum element
-        // with the first element
-        if(max_idx!=i)
-            swap(&arr[max_idx], &arr[i]);
+        for (j = i+1; j < n; j++){
+             if(arr[j] > arr[i]){
+                 swap(i[arr],j[arr]);
+             }
+        }
     }
 }
