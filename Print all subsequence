@@ -1,0 +1,41 @@
+//Abhishek_Chauhan 
+//22
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+void printsubs(vector<int> &v,int index,vector<int> &combination)
+{
+	if(index>=v.size())
+	{
+		for(int i=0;i<combination.size();i++)
+		{ 
+			cout<<combination[i]<<" ";
+		}
+		cout<<endl;
+		return;
+	}
+
+	combination.push_back(v[index]);
+	printsubs(v,index+1,combination);
+	combination.pop_back();
+	printsubs(v,index+1,combination);
+}
+
+int main()
+{
+	int n;
+	cin>>n;
+	vector<int> v,combination;
+
+	while(n--)
+	{
+		int x;
+		cin>>x;
+		v.push_back(x);
+	}
+	printsubs(v,0,combination);
+	v.clear();
+
+}
