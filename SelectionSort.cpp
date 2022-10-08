@@ -10,25 +10,28 @@
 // 11 12 22 25 64
 
 
+// Name : Anmol Saxena  Age : 21
+
+
 void selectionSort(int arr[], int n)
 {
-    int i, j, min_idx;
+    int i, j, max_idx;
  
     // One by one move boundary of
     // unsorted subarray
     for (i = 0; i < n-1; i++)
     {
        
-        // Find the minimum element in
+        // Find the maximum element in
         // unsorted array
-        min_idx = i;
+        max_idx = i;
         for (j = i+1; j < n; j++)
-        if (arr[j] < arr[min_idx])
-            min_idx = j;
+        if (arr[j] > arr[max_idx])
+            max_idx = j;
  
-        // Swap the found minimum element
-        // with the first element
-        if(min_idx!=i)
-            swap(&arr[min_idx], &arr[i]);
+        // Swap the found maximum element
+        // with the current element index
+        if(max_idx!=i)
+            swap(&arr[max_idx], &arr[i]);
     }
 }
