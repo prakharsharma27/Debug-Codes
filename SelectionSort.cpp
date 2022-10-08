@@ -30,7 +30,7 @@ void selectionSort(int arr[], int n)
             max_idx = j;
  
         // Swap the found maximum element
-        // with the current element index
+        // with the first element
         if(max_idx!=i)
             swap(&arr[max_idx], &arr[i]);
     }
