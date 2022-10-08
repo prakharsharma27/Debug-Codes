@@ -1,0 +1,37 @@
+// Abhishek Chauhan
+//22
+#include<bits/stdc++.h>
+using namespace std;
+
+
+void printsubs(string digit,string output,vector<string> &ans,int index,string hash[])
+{
+	if(index>=digit.size())
+	{
+		ans.push_back(output);
+		return;
+	}
+	int num=digit[index]-'0';
+	string value=hash[num];
+
+	for(int i=0;i<value.size();i++)
+	{
+		output.push_back(value[i]);
+		printsubs(digit,output,ans,index+1,hash);
+		output.pop_back();
+	}
+
+}
+
+int main()
+{
+	string hash[10]={" "," ","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
+	string digit;
+	cin>>digit;
+	vector<string> ans;
+
+	printsubs(digit,"",ans,0,hash);
+
+	for(auto x:ans)
+		cout<<x<<endl;	
+}
