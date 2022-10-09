@@ -1,1 +1,142 @@
-<!-- Write the code for making a form in html file. Which takes user name , email , phone number and gender. -->
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Details</title>
+    <meta charset="utf-8">
+    <meta name="description" content="This is a personal website">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #d0ecd9;
+            display: inline-block;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        #frame {
+            width: 98%;
+            height: 750px;
+            background-color: #FFFFFF;
+            margin-right: 0;
+            margin-left: 30px;
+        }
+
+        #main-frame {
+            width: 550px;
+            height: 650px;
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            margin: 45px 30px 30px 30px;
+            box-shadow: 0 -10px 5px #E9FEED, 0 10px 5px #E9F3ED;
+        }
+
+        label {
+            display: inline-block;
+            font-size: 1rem;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .input11 {
+            height: 50px;
+            width: 500px;
+            border: 2px solid #498553;
+            border-radius: 8px;
+            padding-left: 10px;
+        }
+
+        #form {
+            margin-top: 35px;
+            margin-left: 20px;
+            padding-top: 10px;
+        }
+
+        #submit-button {
+            height: 50px;
+            width: 500px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            background-color: #498553;
+            border: 2px solid #498553;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            transition-duration: 0.4s;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+
+        #submit-button:hover {
+            background-color: #E9F3ED;
+            color: #498553;
+        }
+
+        #main-img {
+            height: 500px;
+            width: 600px;
+            margin: 90px 0 20px 200px;
+            position: absolute;
+            top: 40px;
+            right: 270px;
+        }
+
+        #footer {
+            color: black;
+            text-align: center;
+            font-size: 1rem;
+            color: rgb(121, 117, 117);
+            margin-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-frame">
+        <div id="form">
+            <div id="header">
+                <h1>Sign Up</h1>
+                <p>Already a member?<a href="/">Login</a></p>
+            </div>
+            <form autoComplete="off">
+                <div id="username">
+                    <label>Enter a Username</label>
+                    <input class="input11" type="text" name="username" value="" placeholder="Create a username"
+                        required="required" id="myPassword"></input>
+                </div>
+                <div id="username">
+                    <label>Enter your email address</label>
+                    <input class="input11" type="email" name="emailId" value="" placeholder="your@email.com"
+                        required="required"></input>
+                </div>
+                <div id="phone ">
+                    <label>Enter your Phone number</label>
+                    <input class="input11" type="phone" name="phone" value="" placeholder="phone"
+                        required="required"></input>
+                </div>
+                <div id="gender">
+                    <label for="gender">Select Your Gender</label><br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">female</label><br>
+                    <input type="radio" id="binary" name="gender" value="binary">
+                    <label for="binary">binary</label>
+                </div>
+                <div id="submit">
+                    <button id="submit-button" type="submit">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="front-img">
+        <img id="main-img" src="https://media.giphy.com/media/13HBDT4QSTpveU/giphy.gif"></img>
+    </div>
+    <div id="footer" className="row">
+        <footer className="col-12">2022 &#169;copyright Flanker.</footer>
+    </div>
+</body>
