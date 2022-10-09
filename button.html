@@ -1,1 +1,49 @@
 <!-- Write the code for adding a button in an html page with CSS to make it look attractive. -->
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Details</title>
+    <meta charset="utf-8">
+    <meta name="description" content="This is a personal website">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body{
+            text-align: center;
+        }
+        #submit-button {
+            margin-top: 80px;
+            height: 50px;
+            width: 80%;
+            font-size: 1.2rem;
+            font-weight: bold;
+            background-color: #498553;
+            border: 2px solid #498553;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            transition-duration: 0.4s;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        #submit-button:hover {
+            background-color: #E9F3ED;
+            color: #498553;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="submit">
+        <button id="submit-button" type="submit">Click Me</button>
+    </div>
+</body>
+</html>
