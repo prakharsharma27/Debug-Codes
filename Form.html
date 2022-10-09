@@ -1,4 +1,3 @@
-<!-- Write the code for making a form in html file. Which takes user name , email , phone number and gender. -->
 <!DOCTYPE HTML>
 <html>
 
@@ -6,10 +5,13 @@
     <title>Details</title>
     <meta charset="utf-8">
     <meta name="description" content="This is a personal website">
+
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
         rel="stylesheet">
+
     <style>
         body {
             background-color: #d0ecd9;
@@ -73,11 +75,28 @@
             background-color: #E9F3ED;
             color: #498553;
         }
+
+        #main-img {
+            height: 500px;
+            width: 600px;
+            margin: 90px 0 20px 200px;
+            position: absolute;
+            top: 40px;
+            right: 270px;
+        }
+
+        #footer {
+            color: black;
+            text-align: center;
+            font-size: 1rem;
+            color: rgb(121, 117, 117);
+            margin-top: 60px;
+        }
     </style>
 </head>
 
 <body>
-    <div id="main-frame" className="col-4">
+    <div id="main-frame">
         <div id="form">
             <div id="header">
                 <h1>Sign Up</h1>
@@ -113,5 +132,11 @@
                 </div>
             </form>
         </div>
+    </div>
+    <div id="front-img">
+        <img id="main-img" src="https://media.giphy.com/media/13HBDT4QSTpveU/giphy.gif"></img>
+    </div>
+    <div id="footer" className="row">
+        <footer className="col-12">2022 &#169;copyright Flanker.</footer>
     </div>
 </body>
