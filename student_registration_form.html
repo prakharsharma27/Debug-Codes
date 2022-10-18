@@ -1,1 +1,61 @@
 <!-- create a form to get a student register for a course. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <br>
+    <form>
+        <label>Firstname </label>
+        <input type="text" name="firstname" size="15"/><br></br>
+        <label>Lastname</label>
+        <input type="text" name="lastname" size="15"/><br></br>
+        
+    <label>
+        Course :
+    </label>
+    
+        <select>
+            <option value = "Course">Course</option>
+            <option value = "B.Tech">B.Tech</option>
+            <option value = "BBA">BBA</option>
+            <option value = "MBA">MBA</option>
+            <option value = "M.tech">M.Tech</option>
+            <option value = "BSC">BSC</option>
+        </select>
+        <br>
+        <br>
+        <label>
+            Gender :
+        </label><br>
+        <input type="radio" name="gender"/> Male <br>
+        <input type="radio" name="gender"/> Female <br>
+        <input type="radio" name="gender"/> Other
+        <br>
+        <br>
+        <label>
+            phone :
+        </label>
+        <input type="text" name="phone" size="10"><br><br>
+        Address
+        <br>
+
+    <textarea cols="80" rows="5" value="address"></textarea>
+    <br><br>
+    Email:
+    <input type="email" id="email" name="email"><br>
+    <br><br>
+    Password:
+    <input type="password" id="pass" name="pass"><br>
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
